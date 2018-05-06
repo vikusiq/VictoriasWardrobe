@@ -262,7 +262,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Automapper\" />
-    <Folder Include="FluentValidator\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
