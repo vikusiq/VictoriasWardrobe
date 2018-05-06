@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E9DABEED-6777-2893-370E-547CC0E3B63E" name="User_Details">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:13:55 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="User_ID" id="DBCF7BB9-81FC-E1FA-3E51-86DB37F81B0B">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 15:57:04 UTC</createdTime>
+<generatorID>F1D9CBCF-B128-83A6-10C7-CC77F9FA363D</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<referedAttribute>97243B4D-3B86-A2B6-15D9-14B3B570FDC5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Gender" id="F99F253F-F02D-9DAB-242A-DB694778DE82">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:15:39 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Country" id="9C5489AF-0A9E-01BD-61E9-3E974F1C8656">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:17:22 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="City" id="D31AF094-4D91-1C88-F357-36ABFE78F8B9">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:17:46 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Shoes_Size" id="B1ACF68E-F4FE-DB63-5230-3367F4B80C55">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:18:04 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Clothes_Size" id="8CA92508-1972-A23C-0086-5675ABADDA2D">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:26:05 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Balance" id="410E5A58-A6C9-C10B-C004-7CE89988E40D">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:26:30 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Phone_Number" id="1456C2CB-DE2A-5AB1-A5F0-BB36B6CC1EA6">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:27:18 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date_of_birth" id="A095CBDE-FE8D-0DA5-D4CE-FD5D33F3E89C">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:31:29 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9384ED6C-E379-77A2-A08B-304BEF7B4257" name="User_Details PK">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:15:11 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

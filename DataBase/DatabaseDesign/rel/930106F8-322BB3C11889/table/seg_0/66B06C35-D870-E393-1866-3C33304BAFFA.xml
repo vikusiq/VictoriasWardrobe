@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66B06C35-D870-E393-1866-3C33304BAFFA" name="Color">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>7662AD49-B73E-739A-80B8-0C4E20D14DFE</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Color_ID" id="B36C877B-F2C3-62FE-1308-2CD0825229CB">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>6FBDA734-F6FD-B1FC-6B13-0FCFFF6E4A9A</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Color_code" id="9A711C49-7651-29C5-9105-DA2C4A400C73">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>81395974-BDF9-2D8B-BB33-F70402F02372</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Color_name" id="1015F8F6-3DA0-DAB0-06BF-F5ABFF1FDDA7">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>F1851EC3-1714-CDB7-6CF0-EDC900873CC5</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="561A7B3F-D1E5-56C4-8805-4F43774548ED" name="Color_PK">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>A04B28C7-123C-4B58-691A-78F2B27EB7CE</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B36C877B-F2C3-62FE-1308-2CD0825229CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAFE5717-7E44-C20B-1149-89A8A833A6E0" name="ColorCode_UK">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>43FC9937-4E96-B19B-C8D4-33003FE1111E</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A711C49-7651-29C5-9105-DA2C4A400C73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

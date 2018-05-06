@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="398B1C42-67F1-665E-14AD-2DE988561CA8" containerWithKeyObject="B22AD799-7207-E0BF-87E2-8E91D79904C3" localFKIndex="24151BAF-8E88-4363-3289-F02C1DF6DAF1" name="BrandProductRelation">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>834AFF5B-C1CB-445C-045B-0C0D12ED71D2</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<referredTableLongName>Brand</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1E4E121E-3566-A236-ABCC-06D8FC2E3946</referredTableID>
+<keyObject>B65C75ED-C47D-9D05-C05C-D6A778509F34</keyObject>
+<referredKeyID>B65C75ED-C47D-9D05-C05C-D6A778509F34</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Brand_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

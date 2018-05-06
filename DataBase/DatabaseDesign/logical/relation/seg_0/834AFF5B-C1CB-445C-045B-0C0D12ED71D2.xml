@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BrandProductRelation" directorySegmentName="seg_0" id="834AFF5B-C1CB-445C-045B-0C0D12ED71D2">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 16:39:30 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<sourcePk>D041DFC3-61F3-3B3F-C586-85AFEA9CD786</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D5F27288-D24E-4066-9D8F-79ED6CA61571</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DC84A23E-B76B-0154-1C55-20F5C4FC6670</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

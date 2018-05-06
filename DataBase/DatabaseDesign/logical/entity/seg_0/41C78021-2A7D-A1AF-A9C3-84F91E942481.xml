@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="41C78021-2A7D-A1AF-A9C3-84F91E942481" name="Shopping_cart">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:44:31 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="User_ID" id="6C917C66-7EA1-8116-F4EB-21056D1B639F">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 16:59:37 UTC</createdTime>
+<generatorID>56D71B8C-1925-55BA-057A-FF9D85F502E7</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<referedAttribute>97243B4D-3B86-A2B6-15D9-14B3B570FDC5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Product_ID" id="31043B61-6230-C108-F163-C3F04DF3DF72">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:00:22 UTC</createdTime>
+<generatorID>47702DDF-1724-84AE-AF59-5475426219DD</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<referedAttribute>C82198CA-18FA-15E3-6946-C31EE065FCB0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="400F803D-68FF-43DF-BFD3-42F46EFBE63E" name="ShoppingCart_UK">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 19:30:18 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+</identifier>
+</identifiers>
+</Entity>

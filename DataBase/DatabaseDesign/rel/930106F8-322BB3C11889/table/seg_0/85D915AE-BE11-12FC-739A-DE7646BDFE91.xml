@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="85D915AE-BE11-12FC-739A-DE7646BDFE91" name="Shopping_cart">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>41C78021-2A7D-A1AF-A9C3-84F91E942481</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="User_ID" id="DCACB754-0679-A883-5C9F-C1B28151F7D4">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>6C917C66-7EA1-8116-F4EB-21056D1B639F</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C912F98D-86FB-68C8-0A51-B9B906CC867E" referredColumn="8179F6E0-60E4-E72D-2610-AC26D395F772"/>
+</associations>
+</Column>
+<Column name="Product_ID" id="F205C301-E964-5A8E-A6D3-18607B7FF11C">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>31043B61-6230-C108-F163-C3F04DF3DF72</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="31FF5E3D-581E-AB2C-0DBB-DB95F77EDD1E" referredColumn="70E5AECC-D816-620C-B5A9-C378DCBD2F11"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EBBDC372-E0BC-3102-0FA0-9D886461573A" name="ShoppingCart_UK">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>400F803D-68FF-43DF-BFD3-42F46EFBE63E</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="57661569-ED7C-BF7D-28F8-17E08E5D099D" name="ProductShoppingCartRelation">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>47702DDF-1724-84AE-AF59-5475426219DD</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F205C301-E964-5A8E-A6D3-18607B7FF11C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78F13C33-F67A-50D1-54BA-93C4AC279D58" name="UserShoppingCart">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>56D71B8C-1925-55BA-057A-FF9D85F502E7</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCACB754-0679-A883-5C9F-C1B28151F7D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

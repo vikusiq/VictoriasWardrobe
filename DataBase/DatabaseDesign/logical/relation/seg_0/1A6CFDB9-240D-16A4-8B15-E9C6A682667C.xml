@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ColorProductRelation" directorySegmentName="seg_0" id="1A6CFDB9-240D-16A4-8B15-E9C6A682667C">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 16:39:02 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<sourcePk>A04B28C7-123C-4B58-691A-78F2B27EB7CE</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7662AD49-B73E-739A-80B8-0C4E20D14DFE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DC84A23E-B76B-0154-1C55-20F5C4FC6670</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

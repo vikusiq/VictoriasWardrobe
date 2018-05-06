@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="71F254FE-87CF-66CA-7D3D-E59307342BEB" containerWithKeyObject="B22AD799-7207-E0BF-87E2-8E91D79904C3" localFKIndex="5E0FE220-12BD-824C-0E7E-959706B5A94C" name="ColorProductRelation">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 17:04:18 UTC</createdTime>
+<generatorID>1A6CFDB9-240D-16A4-8B15-E9C6A682667C</generatorID>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<referredTableLongName>Color</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>66B06C35-D870-E393-1866-3C33304BAFFA</referredTableID>
+<keyObject>561A7B3F-D1E5-56C4-8805-4F43774548ED</keyObject>
+<referredKeyID>561A7B3F-D1E5-56C4-8805-4F43774548ED</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Color_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UserShoppingCart" directorySegmentName="seg_0" id="56D71B8C-1925-55BA-057A-FF9D85F502E7">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 16:59:37 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<sourcePk>36C50B4A-29F6-06BB-F9FE-6CFB6C936988</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A9928E2F-0139-C091-58AB-DDD5603D1573</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>41C78021-2A7D-A1AF-A9C3-84F91E942481</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

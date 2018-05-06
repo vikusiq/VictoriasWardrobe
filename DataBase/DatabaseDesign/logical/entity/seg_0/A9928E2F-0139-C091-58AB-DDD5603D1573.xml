@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9928E2F-0139-C091-58AB-DDD5603D1573" name="Users">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 17:59:39 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="User_ID" id="97243B4D-3B86-A2B6-15D9-14B3B570FDC5">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:00:14 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email_Address" id="EE4DEA6F-8BEC-B8AB-81E0-F68546571F0D">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 19:05:40 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Password" id="79A2713A-FE4B-74F8-E493-354A04F0646D">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:08:18 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fisrt_Name" id="73CE8C52-2458-DDD3-25BD-045A09B9F23E">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:00:55 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Last_Name" id="5CB015F2-0283-A974-EBC9-568A34D8E9B5">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:05:21 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Administrator" id="B95440CF-933C-A453-6D1E-65E58DC3C5D1">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:12:06 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<constraintName>Password_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="SQL Server 2012" definition="check len(Password)&gt;=6"/>
+</checkConstraint>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="36C50B4A-29F6-06BB-F9FE-6CFB6C936988" name="Users PK">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 18:00:46 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>97243B4D-3B86-A2B6-15D9-14B3B570FDC5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CEA497D6-1645-DE12-CB2E-D8D360FEF04F" name="EmailAddress_UK">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-11 19:06:46 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<newElementsIDs>EE4DEA6F-8BEC-B8AB-81E0-F68546571F0D</newElementsIDs>
+<usedAttributes>
+<attributeRef>EE4DEA6F-8BEC-B8AB-81E0-F68546571F0D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UserRelation" directorySegmentName="seg_0" id="F1D9CBCF-B128-83A6-10C7-CC77F9FA363D">
+<createdBy>Vika</createdBy>
+<createdTime>2018-04-13 15:57:04 UTC</createdTime>
+<ownerDesignName>DatabaseDesign</ownerDesignName>
+<engineerTo>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+</engineerTo>
+<sourcePk>36C50B4A-29F6-06BB-F9FE-6CFB6C936988</sourcePk>
+<dominantRole>A9928E2F-0139-C091-58AB-DDD5603D1573</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A9928E2F-0139-C091-58AB-DDD5603D1573</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>E9DABEED-6777-2893-370E-547CC0E3B63E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

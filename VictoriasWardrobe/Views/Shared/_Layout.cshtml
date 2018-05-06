@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/bundles/style")
+    @Scripts.Render("~/bundles/scripts")
+
+    @RenderSection("scripts", required: false)
+    <title>Victoria's Wardrobe</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Gretong Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+    <!-- start menu -->
+    <script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+
+            $('#etalage').etalage({
+                thumb_image_width: 300,
+                thumb_image_height: 400,
+                source_image_width: 900,
+                source_image_height: 1200,
+                show_hint: true,
+                click_callback: function (image_anchor, instance_id) {
+                    alert('Callback example:\nYou clicked on an image with the anchor: "' + image_anchor + '"\n(in Etalage instance: "' + instance_id + '")');
+                }
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+    <!-- header_top -->
+    <div class="top_bg">
+        <div class="container">
+            <div class="header_top">
+                <div class="top_right">
+                    <ul>
+                        <li><a href="#">help</a></li>|
+                        <li><a href="@Url.Action("contact", "Home")">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="top_left">
+                    <h2><span></span> Contactează-ne: +40 741 931 397</h2>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="header_bg">
+        <div class="container">
+            <div class="header">
+                <div class="head-t">
+                    <div class="logo">
+                        <a href="@Url.Action("Index", "Home")"><img src="@Url.Content("~/Content/images/logofashion.jpg")" class="img-responsive" alt="" width="150px" /> </a>
+                    </div>
+                    <!-- start header_right -->
+                    <div class="header_right">
+                        <div class="rgt-bottom">
+                            <div class="log">
+                                <div class="login">
+                                    <div id="loginContainer">
+                                        <a href="#" id="loginButton"><span>Logare</span></a>
+                                        <div id="loginBox">
+                                            @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "loginForm" }))
+                                            {
+                                                <fieldset id="body">
+                                                    <fieldset>
+                                                        <label for="email">Adresa Email</label>
+                                                        <input type="email" name="email" id="email" required>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <label for="password">Parola</label>
+                                                        <input type="password" name="password" id="password">
+                                                    </fieldset>
+                                                    <input type="submit" id="login" value="Intră în cont">
+                                                    <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Reține-mă!</i></label>
+                                                </fieldset>
+                                                <span><a href="#">Ați uitat parola?</a></span>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reg">
+                                <a href="@Url.Action("register", "Home")">CREARE CONT</a>
+                            </div>
+                            <div class="cart box_1">
+                                <a href="@Url.Action("checkout", "Home")">
+                                    <h3> <span class="simpleCart_total">0.00</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)<img src="images/bag.png" alt=""></h3>
+                                </a>
+                                <p><a href="javascript:;" class="simpleCart_empty">(empty card)</a></p>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="create_btn">
+                                <a href="@Url.Action("Checkout","Home")">CHECKOUT</a>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="search">
+                            <form>
+                                <input type="text" value="" placeholder="search...">
+                                <input type="submit" value="">
+                            </form>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <!-- start header menu -->
+                <ul class="megamenu skyblue">
+                    <li class="active grid"><a class="color1" href="@Url.Action("index", "Home")">Home</a></li>
+                    <li class="grid">
+                        <a class="color2" href="#">new arrivals</a>
+                        <div class="megapanel">
+                            <div class="row">
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Clothing</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>kids</h4>
+                                        <ul>
+                                            <li><a href="women.html">Pools&Tees</a></li>
+                                            <li><a href="women.html">shirts</a></li>
+                                            <li><a href="women.html">shorts</a></li>
+                                            <li><a href="women.html">twinsets</a></li>
+                                            <li><a href="women.html">kurts</a></li>
+                                            <li><a href="women.html">jackets</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Bags</h4>
+                                        <ul>
+                                            <li><a href="women.html">Handbag</a></li>
+                                            <li><a href="women.html">Slingbags</a></li>
+                                            <li><a href="women.html">Clutches</a></li>
+                                            <li><a href="women.html">Totes</a></li>
+                                            <li><a href="women.html">Wallets</a></li>
+                                            <li><a href="women.html">Laptopbags</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>account</h4>
+                                        <ul>
+                                            <li><a href="#">login</a></li>
+                                            <li><a href="@Url.Action("register", "Home")">create an account</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                            <li><a href="women.html">my shopping bag</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Accessories</h4>
+                                        <ul>
+                                            <li><a href="women.html">Belts</a></li>
+                                            <li><a href="women.html">Pens</a></li>
+                                            <li><a href="women.html">Eyeglasses</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">Watches</a></li>
+                                            <li><a href="women.html">Jewellery</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Footwear</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col2"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="color4" href="#">TUXEDO</a>
+                        <div class="megapanel">
+                            <div class="row">
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Clothing</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>kids</h4>
+                                        <ul>
+                                            <li><a href="women.html">Pools&Tees</a></li>
+                                            <li><a href="women.html">shirts</a></li>
+                                            <li><a href="women.html">shorts</a></li>
+                                            <li><a href="women.html">twinsets</a></li>
+                                            <li><a href="women.html">kurts</a></li>
+                                            <li><a href="women.html">jackets</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Bags</h4>
+                                        <ul>
+                                            <li><a href="women.html">Handbag</a></li>
+                                            <li><a href="women.html">Slingbags</a></li>
+                                            <li><a href="women.html">Clutches</a></li>
+                                            <li><a href="women.html">Totes</a></li>
+                                            <li><a href="women.html">Wallets</a></li>
+                                            <li><a href="women.html">Laptopbags</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>account</h4>
+                                        <ul>
+                                            <li><a href="#">login</a></li>
+                                            <li><a href="@Url.Action("register", "Home")">create an account</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                            <li><a href="women.html">my shopping bag</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Accessories</h4>
+                                        <ul>
+                                            <li><a href="women.html">Belts</a></li>
+                                            <li><a href="women.html">Pens</a></li>
+                                            <li><a href="women.html">Eyeglasses</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">Watches</a></li>
+                                            <li><a href="women.html">Jewellery</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Footwear</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col2"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="color5" href="#">SWEATER</a>
+                        <div class="megapanel">
+                            <div class="row">
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Clothing</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>kids</h4>
+                                        <ul>
+                                            <li><a href="women.html">Pools&Tees</a></li>
+                                            <li><a href="women.html">shirts</a></li>
+                                            <li><a href="women.html">shorts</a></li>
+                                            <li><a href="women.html">twinsets</a></li>
+                                            <li><a href="women.html">kurts</a></li>
+                                            <li><a href="women.html">jackets</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Bags</h4>
+                                        <ul>
+                                            <li><a href="women.html">Handbag</a></li>
+                                            <li><a href="women.html">Slingbags</a></li>
+                                            <li><a href="women.html">Clutches</a></li>
+                                            <li><a href="women.html">Totes</a></li>
+                                            <li><a href="women.html">Wallets</a></li>
+                                            <li><a href="women.html">Laptopbags</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>account</h4>
+                                        <ul>
+                                            <li><a href="#">login</a></li>
+                                            <li><a href="@Url.Action("register", "Home")">create an account</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                            <li><a href="women.html">my shopping bag</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Accessories</h4>
+                                        <ul>
+                                            <li><a href="women.html">Belts</a></li>
+                                            <li><a href="women.html">Pens</a></li>
+                                            <li><a href="women.html">Eyeglasses</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">Watches</a></li>
+                                            <li><a href="women.html">Jewellery</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Footwear</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col2"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="color6" href="#">SHOES</a>
+                        <div class="megapanel">
+                            <div class="row">
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Clothing</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>kids</h4>
+                                        <ul>
+                                            <li><a href="women.html">Pools&Tees</a></li>
+                                            <li><a href="women.html">shirts</a></li>
+                                            <li><a href="women.html">shorts</a></li>
+                                            <li><a href="women.html">twinsets</a></li>
+                                            <li><a href="women.html">kurts</a></li>
+                                            <li><a href="women.html">jackets</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Bags</h4>
+                                        <ul>
+                                            <li><a href="women.html">Handbag</a></li>
+                                            <li><a href="women.html">Slingbags</a></li>
+                                            <li><a href="women.html">Clutches</a></li>
+                                            <li><a href="women.html">Totes</a></li>
+                                            <li><a href="women.html">Wallets</a></li>
+                                            <li><a href="women.html">Laptopbags</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>account</h4>
+                                        <ul>
+                                            <li><a href="#">login</a></li>
+                                            <li><a href="@Url.Action("register", "Home")">create an account</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                            <li><a href="women.html">my shopping bag</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Accessories</h4>
+                                        <ul>
+                                            <li><a href="women.html">Belts</a></li>
+                                            <li><a href="women.html">Pens</a></li>
+                                            <li><a href="women.html">Eyeglasses</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">Watches</a></li>
+                                            <li><a href="women.html">Jewellery</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Footwear</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col2"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="color7" href="#">GLASSES</a>
+                        <div class="megapanel">
+                            <div class="row">
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Clothing</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>kids</h4>
+                                        <ul>
+                                            <li><a href="women.html">Pools&Tees</a></li>
+                                            <li><a href="women.html">shirts</a></li>
+                                            <li><a href="women.html">shorts</a></li>
+                                            <li><a href="women.html">twinsets</a></li>
+                                            <li><a href="women.html">kurts</a></li>
+                                            <li><a href="women.html">jackets</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Bags</h4>
+                                        <ul>
+                                            <li><a href="women.html">Handbag</a></li>
+                                            <li><a href="women.html">Slingbags</a></li>
+                                            <li><a href="women.html">Clutches</a></li>
+                                            <li><a href="women.html">Totes</a></li>
+                                            <li><a href="women.html">Wallets</a></li>
+                                            <li><a href="women.html">Laptopbags</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>account</h4>
+                                        <ul>
+                                            <li><a href="#">login</a></li>
+                                            <li><a href="@Url.Action("register", "Home")">create an account</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                            <li><a href="women.html">my shopping bag</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Accessories</h4>
+                                        <ul>
+                                            <li><a href="women.html">Belts</a></li>
+                                            <li><a href="women.html">Pens</a></li>
+                                            <li><a href="women.html">Eyeglasses</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">Watches</a></li>
+                                            <li><a href="women.html">Jewellery</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Footwear</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col2"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="color8" href="#">T-SHIRT</a>
+                        <div class="megapanel">
+                            <div class="row">
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Clothing</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>kids</h4>
+                                        <ul>
+                                            <li><a href="women.html">trends</a></li>
+                                            <li><a href="women.html">sale</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Bags</h4>
+                                        <ul>
+                                            <li><a href="women.html">trends</a></li>
+                                            <li><a href="women.html">sale</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>account</h4>
+                                        <ul>
+                                            <li><a href="#">login</a></li>
+                                            <li><a href="@Url.Action("register", "Home")">create an account</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                            <li><a href="women.html">my shopping bag</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Accessories</h4>
+                                        <ul>
+                                            <li><a href="women.html">trends</a></li>
+                                            <li><a href="women.html">sale</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Footwear</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col2"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="color9" href="#">WATCHES</a>
+                        <div class="megapanel">
+                            <div class="row">
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Clothing</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>kids</h4>
+                                        <ul>
+                                            <li><a href="women.html">trends</a></li>
+                                            <li><a href="women.html">sale</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Bags</h4>
+                                        <ul>
+                                            <li><a href="women.html">trends</a></li>
+                                            <li><a href="women.html">sale</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>account</h4>
+                                        <ul>
+                                            <li><a href="#">login</a></li>
+                                            <li><a href="@Url.Action("register", "Home")">create an account</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                            <li><a href="women.html">my shopping bag</a></li>
+                                            <li><a href="women.html">brands</a></li>
+                                            <li><a href="women.html">create wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Accessories</h4>
+                                        <ul>
+                                            <li><a href="women.html">trends</a></li>
+                                            <li><a href="women.html">sale</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Footwear</h4>
+                                        <ul>
+                                            <li><a href="women.html">new arrivals</a></li>
+                                            <li><a href="women.html">men</a></li>
+                                            <li><a href="women.html">women</a></li>
+                                            <li><a href="women.html">accessories</a></li>
+                                            <li><a href="women.html">kids</a></li>
+                                            <li><a href="women.html">style videos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col2"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    <div class="foot-top">
+        <div class="container">
+            <div class="col-md-6 s-c">
+                <li>
+                    <div class="fooll">
+                        <h5>follow us on</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="social-ic">
+                        <ul>
+                            <li><a href="#"><i class="facebok"> </i></a></li>
+                            <li><a href="#"><i class="twiter"> </i></a></li>
+                            <li><a href="#"><i class="goog"> </i></a></li>
+                            <li><a href="#"><i class="be"> </i></a></li>
+                            <li><a href="#"><i class="pp"> </i></a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                    </div>
+                </li>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="col-md-6 s-c">
+                <div class="stay">
+                    <div class="stay-left">
+                        <form>
+                            <input type="text" placeholder="Enter your email to join our newsletter" required="">
+                        </form>
+                    </div>
+                    <div class="btn-1">
+                        <form>
+                            <input type="submit" value="join">
+                        </form>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="col-md-3 cust">
+                <h4>CUSTOMER CARE</h4>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="buy.html">How To Buy</a></li>
+                <li><a href="#">Delivery</a></li>
+            </div>
+            <div class="col-md-2 abt">
+                <h4>ABOUT US</h4>
+                <li><a href="#">Our Stories</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="@Url.Action("contact", "Home")">Contact</a></li>
+            </div>
+            <div class="col-md-2 myac">
+                <h4>MY ACCOUNT</h4>
+                <li><a href="@Url.Action("register", "Home")">Register</a></li>
+                <li><a href="#">My Cart</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="buy.html">Payment</a></li>
+            </div>
+
+            <div class="clearfix"> </div>
+            <p>Copyrights © 2018 Victoria's Wardrobe </p>
+        </div>
+    </div>
+
+
+</body>
+</html>
