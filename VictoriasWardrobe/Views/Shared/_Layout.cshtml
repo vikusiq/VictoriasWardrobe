@@ -69,22 +69,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <div id="loginContainer">
                                         <a href="#" id="loginButton"><span>Logare</span></a>
                                         <div id="loginBox">
-                                            @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { id = "loginForm" }))
-                                            {
+                                            @using (Html.BeginForm("Login", "Home", FormMethod.Post, new { id = "loginForm" }))
+                                                {
+                                                    <fieldset id="body">
+                                                        <fieldset>
+                                                            <label for="email">Adresa Email</label>
+                                                            <input type="email" name="userCredentials.Email" id="email" required>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <label for="password">Parola</label>
+                                                            <input type="password" name="userCredentials.Password" id="password" required>
+                                                        </fieldset>
+                                                        <input type="submit" id="login" value="Intră în cont">
+                                                        <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Reține-mă!</i></label>
+                                                    </fieldset>
+                                                    <span><a href="#">Ați uitat parola?</a></span>
+                                                }
+                                            @*<form action="/Home/Login" method="post" id="loginForm">
                                                 <fieldset id="body">
                                                     <fieldset>
                                                         <label for="email">Adresa Email</label>
-                                                        <input type="email" name="email" id="email" required>
+                                                        <input type="email" name="userCredentials.Email" id="email" required>
                                                     </fieldset>
                                                     <fieldset>
                                                         <label for="password">Parola</label>
-                                                        <input type="password" name="password" id="password">
+                                                        <input type="password" name="userCredentials.Password" id="password">
                                                     </fieldset>
                                                     <input type="submit" id="login" value="Intră în cont">
                                                     <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Reține-mă!</i></label>
                                                 </fieldset>
                                                 <span><a href="#">Ați uitat parola?</a></span>
-                                            }
+                                            </form>*@
                                         </div>
                                     </div>
                                 </div>

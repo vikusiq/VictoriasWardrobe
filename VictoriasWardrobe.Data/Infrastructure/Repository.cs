@@ -18,7 +18,7 @@ namespace VictoriasWardrobe.Data.Infrastructure
 
         public Repository(IDatabaseFactory databaseFactory)
         {
-            var database = (TDatabase)Activator.CreateInstance(typeof(TDatabase));
+            var database = (TDatabase)Activator.CreateInstance(typeof(TDatabase)); 
             var databaseType = database.GetDatabaseType();
             dataContext = databaseFactory.Get(databaseType);
             dbset = dataContext.Set<TEntity>();

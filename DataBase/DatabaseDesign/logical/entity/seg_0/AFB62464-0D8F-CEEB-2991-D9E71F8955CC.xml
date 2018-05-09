@@ -26,7 +26,8 @@
 <referedAttribute>C82198CA-18FA-15E3-6946-C31EE065FCB0</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Image_Url" id="BBD4A7E8-F120-394C-9E76-9955A947F145">

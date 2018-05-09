@@ -15,20 +15,9 @@
 <ownerDesignName>DatabaseDesign</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Color_code" id="9A711C49-7651-29C5-9105-DA2C4A400C73">
-<createdBy>Vika</createdBy>
-<createdTime>2018-04-13 17:04:18 UTC</createdTime>
-<generatorID>81395974-BDF9-2D8B-BB33-F70402F02372</generatorID>
-<ownerDesignName>DatabaseDesign</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Color_name" id="1015F8F6-3DA0-DAB0-06BF-F5ABFF1FDDA7">
@@ -57,15 +46,15 @@
 <colUsage columnID="B36C877B-F2C3-62FE-1308-2CD0825229CB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BAFE5717-7E44-C20B-1149-89A8A833A6E0" name="ColorCode_UK">
+<ind_PK_UK id="73A54F01-587A-ACF2-2D89-59C6130D4A79" name="ColorName_UK">
 <createdBy>Vika</createdBy>
-<createdTime>2018-04-13 17:04:18 UTC</createdTime>
-<generatorID>43FC9937-4E96-B19B-C8D4-33003FE1111E</generatorID>
+<createdTime>2018-05-07 21:59:12 UTC</createdTime>
+<generatorID>0BAC0B28-50DC-3AA7-14A5-037FF698D4D7</generatorID>
 <ownerDesignName>DatabaseDesign</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9A711C49-7651-29C5-9105-DA2C4A400C73"/>
+<colUsage columnID="1015F8F6-3DA0-DAB0-06BF-F5ABFF1FDDA7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

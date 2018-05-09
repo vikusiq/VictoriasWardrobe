@@ -9,6 +9,8 @@
 <sourcePk>36C50B4A-29F6-06BB-F9FE-6CFB6C936988</sourcePk>
 <dominantRole>A9928E2F-0139-C091-58AB-DDD5603D1573</dominantRole>
 <identifying>false</identifying>
+<nameOnSource>have details</nameOnSource>
+<nameOnTarget>belongs to</nameOnTarget>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

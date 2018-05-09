@@ -20,3 +20,15 @@ C:\inetpub\wwwroot\VictoriasWardrobe\VictoriasWardrobe.Data\obj\Debug\VictoriasW
 C:\inetpub\wwwroot\VictoriasWardrobe\VictoriasWardrobe.Data\obj\Debug\VictoriasWardrobe.Data.pdb
 C:\inetpub\wwwroot\VictoriasWardrobe\VictoriasWardrobe.Data\obj\Debug\VictoriasWardrobe.Data.csproj.CoreCompileInputs.cache
 C:\inetpub\wwwroot\VictoriasWardrobe\VictoriasWardrobe.Data\obj\Debug\VictoriasWardrobe.Data.csproj.CopyComplete
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\bin\Debug\VictoriasWardrobe.Data.dll.config
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\bin\Debug\VictoriasWardrobe.Data.dll
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\bin\Debug\VictoriasWardrobe.Data.pdb
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\bin\Debug\EntityFramework.dll
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\bin\Debug\EntityFramework.xml
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\obj\Debug\VictoriasWardrobe.Data.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\obj\Debug\VictoriasWardrobe.Data.csproj.CoreCompileInputs.cache
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\obj\Debug\VictoriasWardrobe.Data.csproj.CopyComplete
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\obj\Debug\VictoriasWardrobe.Data.dll
+C:\inetpub\wwwroot\VictoriasWardrobeGit\VictoriasWardrobe.Data\obj\Debug\VictoriasWardrobe.Data.pdb

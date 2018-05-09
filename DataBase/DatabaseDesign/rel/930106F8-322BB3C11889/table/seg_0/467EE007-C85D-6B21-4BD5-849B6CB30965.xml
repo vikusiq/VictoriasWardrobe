@@ -15,8 +15,9 @@
 <ownerDesignName>DatabaseDesign</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Email_Address" id="EEB51601-5FCC-7033-7B13-893A58E78069">
@@ -36,10 +37,14 @@
 <createdTime>2018-04-13 17:04:18 UTC</createdTime>
 <generatorID>79A2713A-FE4B-74F8-E493-354A04F0646D</generatorID>
 <ownerDesignName>DatabaseDesign</ownerDesignName>
+<constraintName>constrain_CK</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="check length(password) &gt;= 6"/>
+</checkConstraint>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

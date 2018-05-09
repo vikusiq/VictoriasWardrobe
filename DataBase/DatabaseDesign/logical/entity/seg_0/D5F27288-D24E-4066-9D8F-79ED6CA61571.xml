@@ -24,8 +24,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Brand_Name" id="7FF7414F-6171-01F8-71A1-E5124328992B">
 <createdBy>Vika</createdBy>
@@ -46,8 +47,9 @@
 <createdBy>Vika</createdBy>
 <createdTime>2018-04-11 19:11:09 UTC</createdTime>
 <ownerDesignName>DatabaseDesign</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

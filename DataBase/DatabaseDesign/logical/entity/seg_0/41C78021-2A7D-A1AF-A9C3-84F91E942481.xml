@@ -26,7 +26,8 @@
 <referedAttribute>97243B4D-3B86-A2B6-15D9-14B3B570FDC5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Product_ID" id="31043B61-6230-C108-F163-C3F04DF3DF72">
@@ -40,7 +41,8 @@
 <referedAttribute>C82198CA-18FA-15E3-6946-C31EE065FCB0</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -49,8 +51,9 @@
 <createdBy>Vika</createdBy>
 <createdTime>2018-04-11 19:30:18 UTC</createdTime>
 <ownerDesignName>DatabaseDesign</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="false"/>
 </engineerTo>
 </identifier>
 </identifiers>

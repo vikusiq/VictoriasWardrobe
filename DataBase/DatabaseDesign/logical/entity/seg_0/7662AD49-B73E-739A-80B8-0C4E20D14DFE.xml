@@ -24,21 +24,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Color_code" id="81395974-BDF9-2D8B-BB33-F70402F02372">
-<createdBy>Vika</createdBy>
-<createdTime>2018-04-11 19:14:00 UTC</createdTime>
-<ownerDesignName>DatabaseDesign</ownerDesignName>
-<engineerTo>
-<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Color_name" id="F1851EC3-1714-CDB7-6CF0-EDC900873CC5">
 <createdBy>Vika</createdBy>
@@ -59,24 +47,25 @@
 <createdBy>Vika</createdBy>
 <createdTime>2018-04-11 19:14:34 UTC</createdTime>
 <ownerDesignName>DatabaseDesign</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
+<item key="930106F8-4665-660F-A21B-322BB3C11889" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>6FBDA734-F6FD-B1FC-6B13-0FCFFF6E4A9A</attributeRef>
 </usedAttributes>
 </identifier>
-<identifier id="43FC9937-4E96-B19B-C8D4-33003FE1111E" name="ColorCode_UK">
+<identifier id="0BAC0B28-50DC-3AA7-14A5-037FF698D4D7" name="ColorName_UK">
 <createdBy>Vika</createdBy>
-<createdTime>2018-04-11 19:15:54 UTC</createdTime>
+<createdTime>2018-05-07 21:58:24 UTC</createdTime>
 <ownerDesignName>DatabaseDesign</ownerDesignName>
 <engineerTo>
 <item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
 </engineerTo>
-<newElementsIDs>81395974-BDF9-2D8B-BB33-F70402F02372</newElementsIDs>
+<newElementsIDs>F1851EC3-1714-CDB7-6CF0-EDC900873CC5</newElementsIDs>
 <usedAttributes>
-<attributeRef>81395974-BDF9-2D8B-BB33-F70402F02372</attributeRef>
+<attributeRef>F1851EC3-1714-CDB7-6CF0-EDC900873CC5</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

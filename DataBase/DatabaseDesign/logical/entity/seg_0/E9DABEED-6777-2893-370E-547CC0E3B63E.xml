@@ -26,7 +26,8 @@
 <referedAttribute>97243B4D-3B86-A2B6-15D9-14B3B570FDC5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Gender" id="F99F253F-F02D-9DAB-242A-DB694778DE82">
@@ -40,7 +41,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Country" id="9C5489AF-0A9E-01BD-61E9-3E974F1C8656">
 <createdBy>Vika</createdBy>
@@ -80,8 +82,10 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Clothes_Size" id="8CA92508-1972-A23C-0086-5675ABADDA2D">
 <createdBy>Vika</createdBy>
@@ -108,7 +112,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT026</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Phone_Number" id="1456C2CB-DE2A-5AB1-A5F0-BB36B6CC1EA6">
 <createdBy>Vika</createdBy>
@@ -120,8 +126,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Date_of_birth" id="A095CBDE-FE8D-0DA5-D4CE-FD5D33F3E89C">
 <createdBy>Vika</createdBy>
@@ -137,15 +144,4 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="9384ED6C-E379-77A2-A08B-304BEF7B4257" name="User_Details PK">
-<createdBy>Vika</createdBy>
-<createdTime>2018-04-11 18:15:11 UTC</createdTime>
-<ownerDesignName>DatabaseDesign</ownerDesignName>
-<engineerTo>
-<item key="930106F8-4665-660F-A21B-322BB3C11889" value="true"/>
-</engineerTo>
-<pk>true</pk>
-</identifier>
-</identifiers>
 </Entity>

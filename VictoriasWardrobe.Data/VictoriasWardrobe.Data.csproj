@@ -53,7 +53,14 @@
     <Compile Include="Databases\IDatabase.cs" />
     <Compile Include="Databases\VictoriasWardrobeDatabase.cs" />
     <Compile Include="Databases\VictoriasWardrobeDatabaseFactory.cs" />
-    <Compile Include="Entities\Persons.cs" />
+    <Compile Include="Entities\Brand.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Color.cs" />
+    <Compile Include="Entities\Images.cs" />
+    <Compile Include="Entities\Products.cs" />
+    <Compile Include="Entities\Shopping_cart.cs" />
+    <Compile Include="Entities\Users.cs" />
+    <Compile Include="Entities\User_Details.cs" />
     <Compile Include="Infrastructure\IDatabaseFactory.cs" />
     <Compile Include="Infrastructure\IRepository.cs" />
     <Compile Include="Infrastructure\Repository.cs" />
